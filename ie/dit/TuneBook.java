@@ -12,7 +12,17 @@ public class TuneBook
 	
 	TuneBook(String abc)
 	{
+		loadTuneBook();
+	}
+	
+	public String toString()
+	{
+		StringBuffer sb = new StringBuffer();
 		
+		for(String tune: tunes)
+		{
+			 sb.append(word + ", ");
+		}
 	}
 	
 	
@@ -28,8 +38,9 @@ public class TuneBook
             while ((l = inputStream.readLine()) != null) 
 			{
                
-				//adds each word from text file into the array list
+				//adds each tune from text file into the array list
 			   tunes.add(l);
+			   
             }
         }
         catch (IOException e)
