@@ -19,15 +19,17 @@ public class TuneBook
 	{
 		StringBuffer sb = new StringBuffer();
 		
-		for(String tune:tunes)
+		for(Tune tune:tunes)
 		{
 			sb.append(tune + "\n ");
 		}
+		
+		return sb.toString();
 	}
 	
 	public Tune findTune(String title)
 	{
-		for(String t:tunes)
+		for(Tune t:tunes)
         {
 		
 		}
@@ -47,7 +49,7 @@ public class TuneBook
 			{
                
 				//adds each tune from text file into the array list
-			   tunes.add(l);
+			   //tunes.add(l);
 			   
             }
         }

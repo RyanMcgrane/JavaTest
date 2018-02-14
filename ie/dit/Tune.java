@@ -1,6 +1,6 @@
 package ie.dit;
 
-public class Tune implements Player
+public abstract class Tune implements Player
 {
 
 	private int x;
