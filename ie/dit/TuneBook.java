@@ -29,11 +29,15 @@ public class TuneBook
 	
 	public Tune findTune(String title)
 	{
+		
+		this.title = "title";
 		for(Tune t:tunes)
         {
+			
 		
 		}
 	}
+	
 	
 	
 	public void loadTuneBook()
