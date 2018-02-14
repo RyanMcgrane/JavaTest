@@ -21,7 +21,15 @@ public class TuneBook
 		
 		for(String tune: tunes)
 		{
-			 sb.append(word + ", ");
+			sb.append(tune + "\n ");
+		}
+	}
+	
+	public Tune findTune(String title)
+	{
+		for(String t:tunes)
+        {
+		
 		}
 	}
 	
