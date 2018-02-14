@@ -1,29 +1,34 @@
 package ie.dit;
 
-public class Tune
+public class Tune implements Player
 {
+
 	private int x;
 	private String title;
 	private String altTitle;
 	private String notation;
 	
+	public void Player()
+	{
+		System.out.println("\n"+ notation);
+	}
 	
-	public getx()
+	public int getx()
 	{
 		return x;
 	}
 	
-	public getTitle()
+	public String getTitle()
 	{
 		return title;
 	}
 	
-	public getAltTitle()
+	public String getAltTitle()
 	{
 		return altTitle;
 	}
 	
-	public getNotation()
+	public String getNotation()
 	{
 		return notation;
 	}

@@ -19,7 +19,7 @@ public class TuneBook
 	{
 		StringBuffer sb = new StringBuffer();
 		
-		for(String tune: tunes)
+		for(String tune:tunes)
 		{
 			sb.append(tune + "\n ");
 		}
@@ -70,5 +70,16 @@ public class TuneBook
             }
         }
     }
+	
+	
+	public static void main(String[] args)
+	{
+		TuneBook tb = new TuneBook("hnj0.abc.txt");
+		System.out.println(tb);
+		
+		Tune t = tb.findTune("Scotsman over the border");
+		t.play();
+	}
+	
 }
 
